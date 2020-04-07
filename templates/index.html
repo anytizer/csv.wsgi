@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>CSV Parser</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-teal w3-padding">
+<h1>CSV Parser</h1>
+<form method="post" action="/csv/parse">
+    <div class="w3-padding">
+        <textarea name="csv" style="width: 500px; height: 400px;" placeholder="CSV Contents"></textarea>
+    </div>
+    <div class="w3-padding">
+        <select name="table" class="w3-input" style="width: 400px;">
+            <option value="">-- Parse in --</option>
+            <option value="">Table 1</option>
+            <option value="">Table 2</option>
+            <option value="">Table 3</option>
+        </select>
+        <input type="submit" name="" value="Parse CSV" class="w3-btn w3-indigo">
+    </div>
+</form>
+</body>
+</html>
