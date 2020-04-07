@@ -8,7 +8,6 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def get_index():
     return render_template("index.html")
-    #return "It works!"
 
 
 @app.route("/test", methods=["GET"])
@@ -27,6 +26,7 @@ def get_server():
 
 
 @app.route("/parse", methods=["POST"])
+@app.route("/parse/", methods=["POST"])
 def post_parse():
     csv = request.form["csv"]
     table = request.form["table"]
