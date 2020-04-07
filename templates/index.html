@@ -7,14 +7,14 @@
 <h1>CSV Parser</h1>
 <form method="post" action="./parse/">
     <div class="w3-padding">
-        <textarea name="csv" style="width: 500px; height: 400px;" placeholder="CSV Contents"></textarea>
+        <textarea name="csv" style="width: 500px; height: 400px;" placeholder="Paste your TSV Data here..."></textarea>
     </div>
     <div class="w3-padding">
         <select name="table" class="w3-input" style="width: 400px;">
-            <option value="">-- Parse in --</option>
-            <option value="">Table 1</option>
-            <option value="">Table 2</option>
-            <option value="">Table 3</option>
+            <option value="unknown_table">-- Parse in --</option>
+            <option value="table1">Table 1</option>
+            <option value="table2">Table 2</option>
+            <option value="table3">Table 3</option>
         </select>
         <input type="submit" name="" value="Parse CSV" class="w3-btn w3-indigo">
     </div>
