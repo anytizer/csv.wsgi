@@ -28,8 +28,7 @@ def get_server():
 @app.route("/parse", methods=["POST"])
 @app.route("/parse/", methods=["POST"])
 def post_parse():
-    csv = request.form["csv"]
     table = request.form["table"]
-    
-    output = csv
+    csv = [row.split("\t") for row in request.form["csv"].splitlines()]
+    output = f"Dumping CSV Data into <strong>`{table}`</strong>: "+str(csv)
     return output
